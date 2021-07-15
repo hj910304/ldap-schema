@@ -1,0 +1,77 @@
+attributetype ( 2.21.840.1.113730.5.1.1
+	NAME 'groupId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.5.1.2
+	NAME 'groupNm'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.5.1.3
+#	NAME 'groupType'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.5.1.4
+#	NAME 'useYn'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.5.1.5
+#	NAME 'projectId'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.5.1.6
+#	NAME 'userId'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.5.1.7
+	NAME 'groupLeader'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.5.1.8
+	NAME 'groupSubLeader'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.5.1.9
+	NAME 'groupDesc'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.5.1.10
+#	NAME 'regDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.5.1.11
+#	NAME 'updDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+objectclass	( 2.21.840.1.113730.5.2
+    NAME 'iamGroup'
+    SUP top STRUCTURAL
+	MUST ( cn )
+	MAY (
+		groupId $ groupNm 
+		$ groupType
+		$ useYn $ projectId 
+		$ userId $ groupLeader  $ groupSubLeader $ groupDesc 
+		$ regDt $ updDt 
+	))

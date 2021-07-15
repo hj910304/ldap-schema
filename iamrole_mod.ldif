@@ -1,0 +1,4 @@
+dn: cn={10}iamrole,cn=schema,cn=config
+changetype: modify
+replace: olcObjectClasses
+olcObjectClasses: {0}( 2.21.840.1.113730.3.2 NAME 'iamRole' SUP top STRUCTURAL MUST cn MAY ( roleId $ roleNm $ userType $ description $ roleRange $ portal $ crowd $ jira $ confluence $ bitbucket $ jenkins $ sonarqube $ nexus $ harbor $ spinnaker $ useYn $ jiraRoleId $ regDt $ updDt $ regId $ updId ) )

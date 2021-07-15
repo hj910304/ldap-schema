@@ -1,0 +1,9 @@
+dn: cn={12}iamuser,cn=schema,cn=config
+changetype: modify
+replace: olcObjectClasses
+olcObjectClasses: {0}( 2.21.840.1.113730.1.2 NAME 'iamUser' SUP top STRUCTUR
+ AL MUST cn MAY ( userId $ userNm $ userpassword $ userType $ sktEmpNo $ email $
+  phoneNo $ profileImageUrl $ lastLoginDt $ signUpDt $ portalRoleId $ lockYn
+  $ useYn $ pwdLockCount $ identCheckDt $ fidoExeptDt $ companyNm $ birthDt
+ $ deptNm $ loginFailCnt $ passwordChngDt $ ci $ asisId $ projectId $ deptId
+  $ regDt $ updDt $ cwdGrpId) )

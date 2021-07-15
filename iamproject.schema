@@ -1,0 +1,177 @@
+attributetype ( 2.21.840.1.113730.2.1.1
+	NAME 'projectId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.2
+	NAME 'projectNm'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.3
+#	NAME 'roleId'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.4
+	NAME 'targetSvcId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.2.1.5
+	NAME 'workLoadId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.6
+	NAME 'projectCategory'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.7
+	NAME 'projectType'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.8
+	NAME 'projectOwner'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.9
+#	NAME 'crowd'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.10
+#	NAME 'jira'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.11
+#	NAME 'confluence'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.12
+#	NAME 'bitbucket'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.13
+#	NAME 'jenkins'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.14
+#	NAME 'sonarqube'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.15
+#	NAME 'nexus'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.16
+#	NAME 'harbor'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.17
+#	NAME 'spinnaker'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.18
+#	NAME 'description'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.19
+	NAME 'projectStatus'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.20
+	NAME 'requestDescription'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.21
+	NAME 'personalDataYn'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.22
+	NAME 'slmsYn'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.23
+	NAME 'startDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.2.1.24
+	NAME 'endDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.2.1.25
+	NAME 'projectCompanyType'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.2.1.26
+#	NAME 'regDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.2.1.27
+#	NAME 'updDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+objectclass	( 2.21.840.1.113730.2.2
+    NAME 'iamProject'
+    SUP top STRUCTURAL
+	MUST ( cn )
+	MAY (
+		projectId $ projectNm $ roleId $ targetSvcId
+		$ workLoadId 
+		$ projectCategory $ projectType $ projectOwner $ crowd 
+		$ jira $ confluence $ bitbucket $ jenkins 
+		$ sonarqube $ nexus  
+		$ harbor
+		$ spinnaker $ description 
+		$ projectStatus $ requestDescription $ personalDataYn $ slmsYn
+		$ startDt $ endDt $ projectCompanyType $ regDt $ updDt 
+	))

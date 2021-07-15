@@ -1,0 +1,182 @@
+#attributetype ( 2.21.840.1.113730.1.1.1
+#	NAME 'userId'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.2
+	NAME 'userNm'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.3
+	NAME 'password'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.4
+#	NAME 'userType'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.5
+	NAME 'sktEmpNo'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.6
+#	NAME 'email'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.7
+	NAME 'phoneNo'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.8
+	NAME 'profileImageUrl'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.9
+	NAME 'lastLoginDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.10
+	NAME 'signUpDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.11
+	NAME 'portalRoleId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.12
+	NAME 'lockYn'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.1.1.13
+#	NAME 'useYn'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.14
+	NAME 'pwdLockCount'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.15
+	NAME 'identCheckDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.16
+	NAME 'fidoExeptDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.17
+	NAME 'companyNm'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.18
+	NAME 'birthDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.19
+#	NAME 'deptNm'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.1.1.20
+	NAME 'loginFailCnt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.21
+	NAME 'passwordChngDt'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.22
+	NAME 'ci'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.23
+	NAME 'asisId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.24
+#	NAME 'projectId'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.25
+	NAME 'deptId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.1.1.26
+	NAME 'cwdGrpId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.27
+#	NAME 'regDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.1.1.28
+#	NAME 'updDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+objectclass	( 2.21.840.1.113730.1.2
+    NAME 'iamUser'
+    SUP top STRUCTURAL
+	MUST ( cn )
+	MAY (
+		userId $ userNm $ password $ userType 
+		$ sktEmpNo $ email $ phoneNo $ profileImageUrl
+		$ lastLoginDt $ signUpDt $ portalRoleId $ lockYn 
+		$ useYn $ pwdLockCount $ identCheckDt $ fidoExeptDt 
+		$ companyNm $ birthDt $ deptNm $ loginFailCnt
+		$ passwordChngDt $ ci $ asisId $ projectId $ deptId 
+		$ cwdGrpId
+		$ regDt $ updDt
+	))

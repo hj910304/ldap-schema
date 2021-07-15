@@ -1,0 +1,6 @@
+# cat test.ldif
+dn: cn={12}iamuser,cn=schema,cn=config
+changetype: modify
+add: olcAttributeTypes
+olcAttributeTypes: {20}( 2.21.840.1.113730.1.1.29 NAME 'userpassword' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 )
+

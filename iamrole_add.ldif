@@ -1,0 +1,4 @@
+dn: cn={10}iamrole,cn=schema,cn=config
+changetype: modify
+add: olcAttributeTypes
+olcAttributeTypes: {17}( 2.21.840.1.113730.3.1.21 NAME 'jiraRoleId' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )

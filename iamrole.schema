@@ -1,0 +1,133 @@
+attributetype ( 2.21.840.1.113730.3.1.1
+	NAME 'roleId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.2
+	NAME 'roleNm'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.3.1.3
+	NAME 'userType'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+#attributetype ( 2.21.840.1.113730.3.1.4
+#	NAME 'description'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.5
+	NAME 'roleRange'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.6
+	NAME 'portal'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.7
+	NAME 'crowd'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.8
+	NAME 'jira'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.9
+	NAME 'confluence'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.10
+	NAME 'bitbucket'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.11
+	NAME 'jenkins'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.12
+	NAME 'sonarqube'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.13
+	NAME 'nexus'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.3.1.14
+	NAME 'harbor'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.3.1.15
+	NAME 'spinnaker'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.3.1.16
+	NAME 'useYn'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.3.1.17
+#	NAME 'regDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+#attributetype ( 2.21.840.1.113730.3.1.18
+#	NAME 'updDt'
+#	EQUALITY caseIgnoreMatch
+#	SUBSTR caseIgnoreSubstringsMatch
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 2.21.840.1.113730.3.1.19
+	NAME 'regId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+	
+attributetype ( 2.21.840.1.113730.3.1.20
+	NAME 'updId'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+objectclass	( 2.21.840.1.113730.3.2
+    NAME 'iamRole'
+    SUP top STRUCTURAL
+	MUST ( cn )
+	MAY (
+		roleId $ roleNm $ userType $ description 
+		$ roleRange $ portal $ crowd $ jira 
+		$ confluence $ bitbucket $ jenkins $ sonarqube 
+		$ nexus 
+		$ harbor
+		$ spinnaker $ useYn $ regDt 
+		$ updDt $ regId $ updId
+	))

@@ -1,0 +1,7 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 10fd13ef
+dn: cn=iamrolemapper,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: iamrolemapper
+olcObjectClasses: {0}( 2.21.840.1.113730.4.2 NAME 'iamRoleMapper' SUP top ST
+ RUCTURAL MUST cn MAY ( projectId $ roleId $ regDt $ updDt ) )
