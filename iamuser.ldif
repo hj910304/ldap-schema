@@ -63,9 +63,12 @@ olcAttributeTypes: {18}( 2.21.840.1.113730.1.1.25 NAME 'deptId' EQUALITY cas
 olcAttributeTypes: {19}( 2.21.840.1.113730.1.1.26 NAME 'cwdGrpId' EQUALITY c
  aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
  .121.1.15 )
+olcAttributeTypes: {20}( 2.21.840.1.113730.1.1.27 NAME 'userPassword' EQUALITY cs
+ aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
+ .121.1.15 )
 olcObjectClasses: {0}( 2.21.840.1.113730.1.2 NAME 'iamUser' SUP top STRUCTUR
  AL MUST cn MAY ( userId $ userNm $ password $ userType $ sktEmpNo $ email $
   phoneNo $ profileImageUrl $ lastLoginDt $ signUpDt $ portalRoleId $ lockYn
   $ useYn $ pwdLockCount $ identCheckDt $ fidoExeptDt $ companyNm $ birthDt 
  $ deptNm $ loginFailCnt $ passwordChngDt $ ci $ asisId $ projectId $ deptId
-  $ cwdGrpId $ regDt $ updDt ) )
+  $ cwdGrpId $ regDt $ updDt $ userPassword ) )
