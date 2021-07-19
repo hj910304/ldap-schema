@@ -11,7 +11,7 @@ attributetype ( 2.21.840.1.113730.1.1.2
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 	
 attributetype ( 2.21.840.1.113730.1.1.3
-	NAME 'password'
+	NAME '$userpassword'
 	EQUALITY caseIgnoreMatch
 	SUBSTR caseIgnoreSubstringsMatch
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
@@ -171,12 +171,12 @@ objectclass	( 2.21.840.1.113730.1.2
     SUP top STRUCTURAL
 	MUST ( cn )
 	MAY (
-		userId $ userNm $ password $ userType 
+		userId $ userNm $ $userpassword $ userType
 		$ sktEmpNo $ email $ phoneNo $ profileImageUrl
 		$ lastLoginDt $ signUpDt $ portalRoleId $ lockYn 
 		$ useYn $ pwdLockCount $ identCheckDt $ fidoExeptDt 
 		$ companyNm $ birthDt $ deptNm $ loginFailCnt
 		$ passwordChngDt $ ci $ asisId $ projectId $ deptId 
 		$ cwdGrpId
-		$ regDt $ updDt
+		$ regDt $ updDt $password
 	))
