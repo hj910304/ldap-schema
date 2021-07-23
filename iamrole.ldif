@@ -57,8 +57,11 @@ olcAttributeTypes: {16}( 2.21.840.1.113730.3.1.20 NAME 'updId' EQUALITY case
 olcAttributeTypes: {17}( 2.21.840.1.113730.3.1.21 NAME 'jiraRoleId' EQUALITY case
  IgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.12
  1.1.15 )
+ olcAttributeTypes: {17}( 2.21.840.1.113730.3.1.21 NAME 'showYn' EQUALITY case
+  IgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.12
+  1.1.15 )
 
 olcObjectClasses: {0}( 2.21.840.1.113730.3.2 NAME 'iamRole' SUP top STRUCTUR
  AL MUST cn MAY ( roleId $ roleNm $ userType $ description $ roleRange $ por
  tal $ crowd $ jira $ confluence $ bitbucket $ jenkins $ sonarqube $ nexus $
-  harbor $ spinnaker $ useYn $ regDt $ updDt $ regId $ updId $ jiraRoleId) )
+  harbor $ spinnaker $ useYn $ regDt $ updDt $ regId $ updId $ jiraRoleId $showYn ) )
