@@ -45,33 +45,35 @@ olcAttributeTypes: {12}( 2.21.840.1.113730.1.1.17 NAME 'companyNm' EQUALITY
 olcAttributeTypes: {13}( 2.21.840.1.113730.1.1.18 NAME 'birthDt' EQUALITY ca
  seIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.
  121.1.15 )
-olcAttributeTypes: {14}( 2.21.840.1.113730.1.1.19 NAME 'loginFailCnt' EQUALI
+olcAttributeTypes: {14}( 2.21.840.1.113730.1.1.20 NAME 'loginFailCnt' EQUALI
  TY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466
  .115.121.1.15 )
-olcAttributeTypes: {15}( 2.21.840.1.113730.1.1.20 NAME 'passwordChngDt' EQUA
+olcAttributeTypes: {15}( 2.21.840.1.113730.1.1.21 NAME 'passwordChngDt' EQUA
  LITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.14
  66.115.121.1.15 )
-olcAttributeTypes: {16}( 2.21.840.1.113730.1.1.21 NAME 'ci' EQUALITY caseIgn
+olcAttributeTypes: {16}( 2.21.840.1.113730.1.1.22 NAME 'ci' EQUALITY caseIgn
  oreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1
  .15 )
-olcAttributeTypes: {17}( 2.21.840.1.113730.1.1.22 NAME 'asisId' EQUALITY cas
+olcAttributeTypes: {17}( 2.21.840.1.113730.1.1.23 NAME 'asisId' EQUALITY cas
  eIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.1
  21.1.15 )
-olcAttributeTypes: {18}( 2.21.840.1.113730.1.1.23 NAME 'deptId' EQUALITY cas
+olcAttributeTypes: {18}( 2.21.840.1.113730.1.1.25 NAME 'deptId' EQUALITY cas
  eIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.1
  21.1.15 )
-olcAttributeTypes: {19}( 2.21.840.1.113730.1.1.24 NAME 'cwdGrpId' EQUALITY c
+olcAttributeTypes: {19}( 2.21.840.1.113730.1.1.26 NAME 'cwdGrpId' EQUALITY c
  aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
  .121.1.15 )
-olcAttributeTypes: {22}( 2.21.840.1.113730.1.1.25 NAME 'JBCHARGE' EQUALITY c
-aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
+olcAttributeTypes: {20}( 2.21.840.1.113730.1.1.27 NAME 'userPassword' EQUALITY
+caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
+ .121.1.15 )
+olcAttributeTypes: {22}( 2.21.840.1.113730.1.1.28 NAME 'JBCHARGE' EQUALITY
+caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
 .121.1.15 )
-olcAttributeTypes: {23}( 2.21.840.1.113730.1.1.26 NAME 'gender' EQUALITY c
-aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
-.121.1.15 )
+olcAttributeTypes: {23}( 2.21.840.1.113730.1.1.29 NAME 'gender' EQUALITY
+caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 olcObjectClasses: {0}( 2.21.840.1.113730.1.2 NAME 'iamUser' SUP top STRUCTUR
  AL MUST cn MAY ( userId $ userNm $ password $ userType $ sktEmpNo $ email $
   phoneNo $ profileImageUrl $ lastLoginDt $ signUpDt $ portalRoleId $ lockYn
   $ useYn $ pwdLockCount $ identCheckDt $ fidoExeptDt $ companyNm $ birthDt 
- $ deptNm $ loginFailCnt $ passwordChngDt $ ci $ asisId $ deptId
+ $ deptNm $ loginFailCnt $ passwordChngDt $ ci $ asisId $ projectId $ deptId
   $ cwdGrpId $ regDt $ updDt $ userPassword $ JBCHARGE $ gender) )
