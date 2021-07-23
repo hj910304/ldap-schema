@@ -63,13 +63,13 @@ olcAttributeTypes: {18}( 2.21.840.1.113730.1.1.25 NAME 'deptId' EQUALITY cas
 olcAttributeTypes: {19}( 2.21.840.1.113730.1.1.26 NAME 'cwdGrpId' EQUALITY c
  aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
  .121.1.15 )
-olcAttributeTypes: {20}( 2.21.840.1.113730.1.1.27 NAME 'userPassword' EQUALITY cs
+olcAttributeTypes: {20}( 2.21.840.1.113730.1.1.27 NAME 'userPassword' EQUALITY c
  aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
  .121.1.15 )
-  olcAttributeTypes: {22}( 2.21.840.1.113730.1.1.28 NAME 'JBCHARGE' EQUALITY cs
+  olcAttributeTypes: {22}( 2.21.840.1.113730.1.1.28 NAME 'JBCHARGE' EQUALITY c
    aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
    .121.1.15 )
- olcAttributeTypes: {23}( 2.21.840.1.113730.1.1.28 NAME 'gender' EQUALITY cs
+ olcAttributeTypes: {23}( 2.21.840.1.113730.1.1.28 NAME 'gender' EQUALITY c
   aseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115
   .121.1.15 )
 olcObjectClasses: {0}( 2.21.840.1.113730.1.2 NAME 'iamUser' SUP top STRUCTUR
