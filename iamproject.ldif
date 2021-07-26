@@ -45,9 +45,13 @@ olcAttributeTypes: {12}( 2.21.840.1.113730.2.1.24 NAME 'endDt' EQUALITY case
 olcAttributeTypes: {13}( 2.21.840.1.113730.2.1.25 NAME 'projectCompanyType' 
  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.
  1.1466.115.121.1.15 )
+ olcAttributeTypes: {14}( 2.21.840.1.113730.2.1.26 NAME 'asisYn'
+  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.
+  1.1466.115.121.1.15 )
+
 olcObjectClasses: {0}( 2.21.840.1.113730.2.2 NAME 'iamProject' SUP top STRUC
  TURAL MUST cn MAY ( projectId $ projectNm $ roleId $ targetSvcId $ workLoad
  Id $ projectCategory $ projectType $ projectOwner $ crowd $ jira $ confluen
  ce $ bitbucket $ jenkins $ sonarqube $ nexus $ harbor $ spinnaker $ descrip
  tion $ projectStatus $ requestDescription $ personalDataYn $ slmsYn $ start
- Dt $ endDt $ projectCompanyType $ regDt $ updDt ) )
+ Dt $ endDt $ projectCompanyType $ regDt $ updDt $ asisYn) )
